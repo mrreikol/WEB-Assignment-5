@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #5 — Part 3: Events</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Assignment #5</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Part 1: Intro (Tasks 0–1)</a></li>
+      <li><a href="part2.html">Part 2: DOM (Tasks 2–4)</a></li>
+      <li><a href="part3.html" class="active">Part 3: Events (Tasks 5–7)</a></li>
+      <li><a href="part4.html">Part 4: To-Do App (Task 8)</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Part 3. Events</h1>
+      <p>Handling mouse interactions, real-time keyboard events, and arithmetic calculator operations.</p>
+    </header>
+
+    <section class="card">
+      <h2>Task 5. Mouse Events</h2>
+      <p style="margin-bottom: 0.75rem;">Hover your mouse over the box below to trigger <code>mouseover</code> and move away to trigger <code>mouseout</code>.</p>
+      <div id="hoverBox" class="hover-box">Hover Over Me!</div>
+    </section>
+
+    <section class="card">
+      <h2>Task 6. Keyboard Events</h2>
+      <label for="liveInput">Type anything below (listens to <code>keyup</code> event):</label>
+      <input type="text" id="liveInput" class="input-field" placeholder="Start typing here...">
+      <p><strong>Real-time Value:</strong> <span id="liveOutput" style="color: #3b49df; font-weight: 600;">(nothing typed yet)</span></p>
+    </section>
+
+    <section class="card">
+      <h2>Task 7. Calculator</h2>
+      <p style="margin-bottom: 0.75rem;">Enter two numbers and choose an arithmetic operation:</p>
+      <div class="calc-grid">
+        <input type="number" id="calcNum1" class="input-field" placeholder="First number" value="15">
+        <input type="number" id="calcNum2" class="input-field" placeholder="Second number" value="3">
+      </div>
+      <div>
+        <button class="btn calc-op" data-op="+">Add (+)</button>
+        <button class="btn calc-op" data-op="-">Subtract (&minus;)</button>
+        <button class="btn calc-op" data-op="*">Multiply (&times;)</button>
+        <button class="btn calc-op" data-op="/">Divide (&divide;)</button>
+      </div>
+      <p style="margin-top: 1rem; font-size: 1.1rem;">
+        <strong>Result:</strong> <span id="calcResult" style="color: #16a34a; font-weight: 700;">18</span>
+      </p>
+    </section>
+  </main>
+
+  <script src="js/part3.js"></script>
+</body>
+</html>

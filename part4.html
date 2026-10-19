@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #5 — Part 4: Interactive To-Do List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Assignment #5</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Part 1: Intro (Tasks 0–1)</a></li>
+      <li><a href="part2.html">Part 2: DOM (Tasks 2–4)</a></li>
+      <li><a href="part3.html">Part 3: Events (Tasks 5–7)</a></li>
+      <li><a href="part4.html" class="active">Part 4: To-Do App (Task 8)</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="todo-layout">
+      <section>
+        <h2 class="todo-column-title">To-do list</h2>
+        <div id="todoListContainer"></div>
+      </section>
+
+      <section>
+        <h2 class="todo-column-title">Add new task</h2>
+        <div class="todo-form-card">
+          <label for="taskTitle">* Title</label>
+          <input type="text" id="taskTitle" class="input-field" placeholder="e.g. Assignment 6">
+
+          <label for="taskDescription">* Description</label>
+          <textarea id="taskDescription" class="textarea-field" rows="6" placeholder="e.g. Complete assignment on time"></textarea>
+
+          <button id="addTaskBtn" class="btn" style="min-width: 140px; padding: 0.7rem 1.5rem;">Add task</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/part4.js"></script>
+</body>
+</html>

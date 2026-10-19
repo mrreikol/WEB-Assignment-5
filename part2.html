@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment #5 — Part 2: DOM Manipulation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">Assignment #5</a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Part 1: Intro (Tasks 0–1)</a></li>
+      <li><a href="part2.html" class="active">Part 2: DOM (Tasks 2–4)</a></li>
+      <li><a href="part3.html">Part 3: Events (Tasks 5–7)</a></li>
+      <li><a href="part4.html">Part 4: To-Do App (Task 8)</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <header class="page-header">
+      <h1>Part 2. DOM Manipulation</h1>
+      <p>Interactive demonstrations of changing content, modifying CSS styles, and creating/removing DOM nodes.</p>
+    </header>
+
+    <section class="card">
+      <h2>Task 2. Changing Content</h2>
+      <p id="changeableParagraph">This is the original paragraph text before clicking the button.</p>
+      <button id="changeTextBtn" class="btn">Change Text</button>
+    </section>
+
+    <section class="card">
+      <h2>Task 3. Changing Styles</h2>
+      <div id="styleContainer" class="style-demo-box">
+        Watch my background color and font size change dynamically when you click the buttons below!
+      </div>
+      <button id="changeBgBtn" class="btn">Change Background Color</button>
+      <button id="changeFontBtn" class="btn btn-secondary">Change Font Size</button>
+    </section>
+
+    <section class="card">
+      <h2>Task 4. Creating &amp; Removing Elements</h2>
+      <ul id="dynamicList" style="padding-left: 1.4rem; margin-bottom: 1rem;">
+        <li>Item 1 — HTML Structure</li>
+        <li>Item 2 — CSS Styling</li>
+        <li>Item 3 — JavaScript DOM</li>
+      </ul>
+      <button id="addItemBtn" class="btn">Add Item</button>
+      <button id="removeItemBtn" class="btn btn-danger">Remove Item</button>
+    </section>
+  </main>
+
+  <script src="js/part2.js"></script>
+</body>
+</html>
